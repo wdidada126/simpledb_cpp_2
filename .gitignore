@@ -1,0 +1,51 @@
+# Ignore build files
+build/
+cmake-build-*
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Ignore logs
+*.log
+
+# Ignore VSCode specific settings
+.vscode/
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/c_cpp_properties.json
+
+# Ignore other common IDE settings
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore debug and release folders (if generated)
+Debug/
+Release/
+
+# Ignore temporary system files
+.DS_Store
+Thumbs.db
+
+# Ignore Mac OS specific files
+*.DS_Store
+
+# Ignore cache files
+.cache/
+*.pid
+
+# Ignore clangd index files
+.clangd/
+
+main
+main.dSYM/
+
+db/
