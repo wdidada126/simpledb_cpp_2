@@ -58,7 +58,7 @@ std::strong_ordering Constant::operator<=>(const Constant& other) const {
     if (d_type == ::jdbc::ColumnType::INT) {
         return as_int() <=> other.as_int();
     } else {
-        return as_string() <=> other.as_string();
+        return as_string().compare(other.as_string()) <=> 0;
     }
 }
 
