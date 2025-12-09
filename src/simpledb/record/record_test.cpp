@@ -9,7 +9,7 @@ int main() {
     auto tx = db.new_tx();
     simpledb::record::Schema sch{};
     sch.add_int_field("a");
-    sch.add_string_field("B", 9);
+    sch.add_string_field("b", 9);
     simpledb::record::Layout layout{sch};
     for (const auto& field : sch.fields()) {
         int offset = layout.offset(field);
