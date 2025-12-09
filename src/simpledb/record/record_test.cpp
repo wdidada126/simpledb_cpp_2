@@ -8,7 +8,7 @@ int main() {
     simpledb::server::SimpleDB db("testdb", 4096, 10);
     auto tx = db.new_tx();
     simpledb::record::Schema sch{};
-    sch.add_int_field("A");
+    sch.add_int_field("a");
     sch.add_string_field("B", 9);
     simpledb::record::Layout layout{sch};
     for (const auto& field : sch.fields()) {
